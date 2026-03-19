@@ -14,22 +14,22 @@ cask "jj-spice" do
   on_macos do
     on_intel do
       url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_darwin_amd64.tar.gz"
-      sha256 "079f0c76bd1dd07d2c8a668d8a4d78bacf32e2593122999d29675070a767a4b8"
+      sha256 "9eb8777f48efdc9d9684f8dc51b2c1f4fe113d9b8fce379edc79eb5df956ed2e"
     end
     on_arm do
       url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_darwin_arm64.tar.gz"
-      sha256 "f06b5b7e0c49ee24fd24f2eed16765544f0dfd3e09adac8c4f7da3410e7aa777"
+      sha256 "bfc5a8acc5cae32db75cf32113c7a7b090d78034a70ce10baf060ba2187a630a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_linux_amd64.tar.gz"
-      sha256 "b8291301824caa02df5b53db873a6f6fe87a2b923961fc5d0b4a2580d599cdb8"
+      sha256 "edca2e5e0c4f071613a5cb4d683dc891943e643761a84484843d9ccca6f464d4"
     end
     on_arm do
       url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_linux_arm64.tar.gz"
-      sha256 "3fc3001c6d3f07f2825ae214f539972b49efa465254abaa9ab1ca36f6a57ed5b"
+      sha256 "da7442ab0ca040268a176440f89f54e4d2b30035b416e4f422772011827f80b7"
     end
   end
 
