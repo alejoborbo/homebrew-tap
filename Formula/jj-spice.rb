@@ -1,0 +1,34 @@
+class JjSpice < Formula
+  desc "Stacked change requests for Jujutsu VCS"
+  homepage "https://github.com/alejoborbo/jj-spice"
+  version "0.1.0"
+  license "Apache-2.0"
+
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_darwin_arm64.tar.gz"
+      sha256 "bfc5a8acc5cae32db75cf32113c7a7b090d78034a70ce10baf060ba2187a630a"
+    else
+      url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_darwin_amd64.tar.gz"
+      sha256 "9eb8777f48efdc9d9684f8dc51b2c1f4fe113d9b8fce379edc79eb5df956ed2e"
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.arm?
+      url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_linux_arm64.tar.gz"
+      sha256 "da7442ab0ca040268a176440f89f54e4d2b30035b416e4f422772011827f80b7"
+    else
+      url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_linux_amd64.tar.gz"
+      sha256 "edca2e5e0c4f071613a5cb4d683dc891943e643761a84484843d9ccca6f464d4"
+    end
+  end
+
+  def install
+    bin.install "jj-spice"
+  end
+
+  test do
+    system bin/"jj-spice", "--version"
+  end
+end
