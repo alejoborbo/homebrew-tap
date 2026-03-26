@@ -1,26 +1,26 @@
 class JjSpice < Formula
   desc "Stacked change requests for Jujutsu VCS"
   homepage "https://github.com/alejoborbo/jj-spice"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_darwin_arm64.tar.gz"
-      sha256 "b0c932e3e6f746de2b2b26f717650c0acf4ecefc6e8c1290c7e10ec876a48f0f"
+      sha256 "d3a24acb7b78cfa1233e636efeb91292a3ef5ad701d451e42266ec674469e41c"
     else
       url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_darwin_amd64.tar.gz"
-      sha256 "d505af9723dd86fbfaeb9d2ff0369cfda7da274acb9a3a4c46fe46684eb3e521"
+      sha256 "ea3eeb31833e4b1b31e3168863ab5058ac8cb652a99ff016b1fd8bce968d3d0d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_linux_arm64.tar.gz"
-      sha256 "c4960a03e3f9c2f2bdfb138b68d6ca07442a19c28366ec41ea87c5b58fb5f6c4"
+      sha256 "110aeb7fefc4567e8d048b3237f574a237911ebfd2a646d9a29a959c296a4641"
     else
       url "https://github.com/alejoborbo/jj-spice/releases/download/v#{version}/jj-spice_#{version}_linux_amd64.tar.gz"
-      sha256 "0d259d7735c076b80bbc79dbcdeb18706ae05fa688c9fa00ff59c5414e355cd3"
+      sha256 "5a6d978a92d33a915632b26481eb38d2d3329922aecf5349a7c9b228a837ff77"
     end
   end
 
